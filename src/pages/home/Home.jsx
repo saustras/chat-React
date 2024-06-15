@@ -58,7 +58,7 @@ export default function Home() {
       }
 
       try {
-        const socket = await io("https://chat-node-back-w4ll.onrender.com:4000", {
+        const socket = await io("https://chat-node-back-w4ll.onrender.com", {
           path: '/user',
           "transports": ['websocket'],
           auth: {
@@ -67,7 +67,7 @@ export default function Home() {
           },
         });
 
-
+        console.log(socket)
         socket.on('onlineUser', (data) => {
           dispatch(setOnlineUser(data));
         });
