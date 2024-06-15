@@ -82,3 +82,35 @@
 .login-link a:hover {
     color: #2563eb;
 }
+
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    .login-box {
+        max-width: 20rem; /* Adjust max width if needed */
+    }
+    
+    .login-title {
+        font-size: 1.6rem; /* Adjust font size */
+    }
+    
+    .field input {
+        width: 72%; 
+    }
+
+    .login-upload {
+        height: 2.8rem;
+    }
+
+    .login-upload p {
+        font-size: 0.7rem; 
+    }
+
+    .login-upload button {
+        font-size: 1rem; 
+    }
+
+    .login-link {
+        font-size: 0.8rem; 
+    }
+}

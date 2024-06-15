@@ -82,3 +82,34 @@
 .register-link a:hover {
     color: #2563eb;
 }
+
+
+@media (max-width: 600px) {
+    .register-box {
+        max-width: 20rem; 
+    }
+    
+    .register-title {
+        font-size: 1.6rem; 
+    }
+    
+    .field input {
+        width: 72% !important;
+    }
+
+    .register-upload {
+        height: 2.8rem; 
+    }
+
+    .register-upload p {
+        font-size: 0.7rem; 
+    }
+
+    .register-upload button {
+        font-size: 1rem; 
+    }
+
+    .register-link {
+        font-size: 0.8rem; 
+    }
+}
