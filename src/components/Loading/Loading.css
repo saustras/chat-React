@@ -1,0 +1,38 @@
+.loading-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .loading-icon {
+    width: 2rem; 
+    height: 2rem; 
+    color: #e5e7eb; 
+    animation: spin 1s linear infinite;
+    fill: var(--primary); 
+  }
+  
+
+  .loading-icon.dark {
+    color: #4b5563;
+  }
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

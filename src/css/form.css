@@ -1,0 +1,44 @@
+form {
+    label {
+        position: relative;
+        bottom: 8px;
+    }
+}
+
+.field {
+
+    input {
+        border: 2px solid var(--border-primary);
+        background-color: var(--background-secondary);
+        color: var(--text-primary);
+        padding: 14px;
+        border-radius: 6px;
+        outline: none;
+
+        &:hover,
+        &:active,
+        &:focus {
+            border-color: var(--primary);
+        }
+    }
+
+}
+
+.field.error .input input {
+    border-color: var(--danger);
+}
+
+.button-submit {
+    background-color: var(--primary);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 15.5px 30px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: var(--primary-hover);
+    }
+}

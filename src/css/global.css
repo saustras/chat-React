@@ -1,0 +1,36 @@
+@import url("./color.css");
+@import url("./form.css");
+
+* {
+    color: var(--text-primary);
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0px;
+    padding: 2px;
+    font-family: Lato,Helvetica Neue,Arial,Helvetica,sans-serif;
+}
+
+p,
+label {
+    margin: 0;
+    font-family: Lato,Helvetica Neue,Arial,Helvetica,sans-serif;
+}
+
+a {
+    color: var(--text-primary);
+    font-family: Lato,Helvetica Neue,Arial,Helvetica,sans-serif;
+}
+
+a:hover {
+    color: var(--primary-hover) !important;
+}

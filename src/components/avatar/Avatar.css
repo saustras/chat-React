@@ -1,0 +1,43 @@
+/* Avatar.css */
+
+.avatar {
+    position: relative;
+    font-weight: bold;
+    color: #1e293b; 
+    border-radius: 50%;
+  }
+  
+  .avatar img {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .avatar-initials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    font-size: 1.125rem; 
+  }
+  
+  .online-indicator {
+    background-color: #16a34a; 
+    padding: 0.25rem; 
+    position: absolute;
+    bottom: 0.01rem; 
+    right: -0.25rem;
+    z-index: 10;
+    border-radius: 50%;
+  }
+  
+  .bg-slate-200 { background-color: #e2e8f0; }
+  .bg-teal-200 { background-color: #a5f3fc; }
+  .bg-red-200 { background-color: #fecaca; }
+  .bg-green-200 { background-color: #bbf7d0; }
+  .bg-yellow-200 { background-color: #fef08a; }
+  .bg-gray-200 { background-color: #e5e7eb; }
+  .bg-cyan-200 { background-color: #cffafe; }
+  .bg-sky-200 { background-color: #bae6fd; }
+  .bg-blue-200 { background-color: #bfdbfe; }
+  
