@@ -84,7 +84,7 @@ export default function Login() {
               </div>
 
               <button className="button-submit" type="submit">
-                Iniciar sesión
+                <h3>Iniciar sesión</h3>
               </button>
             </form>
 

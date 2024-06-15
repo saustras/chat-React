@@ -282,7 +282,7 @@ export default function MessagePage() {
                 value={message.text}
                 onChange={handleOnChange}
               />
-              <button className='button-submit'>
+              <button className='button-submit-message'>
                 <IoMdSend size={28} />
               </button>
             </form>

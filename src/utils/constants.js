@@ -1,6 +1,6 @@
 export const ENV = {
     SERVER_HOST: "http://localhost:3000",
-    API_URL:"https://chat-node-back-w4ll.onrender.com/api",
+    API_URL:"http://localhost:4000/api",
     API_URL_SOCKET:"http://localhost:4000",
     ENDPOINTS: {
         AUTH:{

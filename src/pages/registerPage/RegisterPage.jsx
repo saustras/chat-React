@@ -141,7 +141,7 @@ export default function RegisterPage() {
               </div>
 
               <button className="button-submit" type="submit">
-                Registrarse
+              <h3>Iniciar sesión</h3>
               </button>
             </form>
 
