@@ -73,7 +73,7 @@ export const Sidebar = () => {
                     </div>
                 </div>
 
-                <div>
+                <div className='end-side'>
                     <div className='avatar-side' title={user?.name} onClick={() => setEditUserOpen(true)}>
                         <Avatar
                             width={40}
