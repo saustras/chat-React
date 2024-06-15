@@ -59,7 +59,7 @@ export default function RegisterPage() {
     try {
       await authCtrl.register(data);
       toast.success('Cuenta registrada correctamente.')
-      navigate('/email')
+      navigate('/login')
     } catch (error) {
       toast.error(error?.response?.data?.message)
     }
@@ -141,7 +141,7 @@ export default function RegisterPage() {
               </div>
 
               <button className="button-submit" type="submit">
-              <h3>Iniciar sesión</h3>
+              <h3>Registrarse</h3>
               </button>
             </form>
 
