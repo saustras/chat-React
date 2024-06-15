@@ -84,18 +84,18 @@
 }
 
 
-/* Media Query for smaller screens */
+
 @media (max-width: 600px) {
     .login-box {
-        max-width: 20rem; /* Adjust max width if needed */
+        max-width: 20rem; 
     }
     
     .login-title {
-        font-size: 1.6rem; /* Adjust font size */
+        font-size: 1.6rem; 
     }
     
     .field input {
-        width: 72%; 
+        width: 90%!important; 
     }
 
     .login-upload {

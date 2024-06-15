@@ -92,10 +92,10 @@
     .register-title {
         font-size: 1.6rem; 
     }
-    
     .field input {
-        width: 72% !important;
+        width: 90%!important; 
     }
+
 
     .register-upload {
         height: 2.8rem; 
