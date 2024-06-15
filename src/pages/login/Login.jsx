@@ -5,7 +5,7 @@ import './Login.css'
 import { Auth } from '../../api/auth'
 import { toast } from 'react-toastify'
 import { useDispatch } from 'react-redux'
-import { setUser } from '../../redux/userSlice'
+import { setToken, setUser } from '../../redux/userSlice'
 
 const authCtrl = new Auth();
 
@@ -36,10 +36,10 @@ export default function Login() {
     try {
       const response = await authCtrl.login(data);
       if (response.success) {
-        dispatch(setUser(response?.data))
+        console.log(response?.data)
+        dispatch(setToken(response?.data))
         localStorage.setItem('token',response?.data )
       }
-
       toast.success('Has iniciado sesion correctamente.')
       navigate('/')
     } catch (error) {

@@ -3,13 +3,14 @@ import { ENV } from "../utils/constants";
 export class User {
     async getUser() {
         try {
+            const token = localStorage.getItem("token")
             const url =`${ENV.API_URL}/${ENV.ENDPOINTS.USERDETAILS}`
             const params = {
               method: "GET",
               headers: {
                 "Content-Type": "application/json",
+                "Authorization": token 
               },
-              credentials: 'include'
             };
             const response = await fetch(url, params);
 

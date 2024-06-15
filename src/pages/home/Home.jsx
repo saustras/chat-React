@@ -29,7 +29,7 @@ export default function Home() {
          user = await userCtrl.getUser();
          if (!user) {
           navigate("/login")
-           dipatch(logout())
+           dispatch(logout())
          }
         dispatch(setUser(user))
         
@@ -58,7 +58,7 @@ export default function Home() {
       }
 
       try {
-        const socket = await io("http://localhost:4000", {
+        const socket = await io("https://chat-node-back-w4ll.onrender.com:4000", {
           path: '/user',
           "transports": ['websocket'],
           auth: {
@@ -67,10 +67,6 @@ export default function Home() {
           },
         });
 
-
-        socket.on('connect_error', (err) => {
-          console.error('Connection error:', err);
-        });
 
         socket.on('onlineUser', (data) => {
           dispatch(setOnlineUser(data));
